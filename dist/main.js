@@ -1,1 +1,1 @@
-console.log("hi");
+(()=>{const e=document.getElementById("search-input");e.addEventListener("keydown",(t=>{"Enter"===t.key&&(console.log(e.value.toLowerCase().trim()),e.value)}))})();

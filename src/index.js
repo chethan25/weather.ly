@@ -1,3 +1,12 @@
-import UI from './modules/UI';
+const searchInput = document.getElementById('search-input');
 
-document.addEventListener('DOMContentLoaded', UI.loadHomepage);
+// get input from user
+function getSearchValue() {
+  return searchInput.value.toLowerCase().trim();
+}
+
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    getSearchValue();
+  }
+});
