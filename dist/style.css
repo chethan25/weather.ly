@@ -17,7 +17,7 @@ body {
 .container {
   display: flex;
   height: 100vh;
-  background: url('./images/clear.jpg') center center/cover;
+  background: url('./images/rain.jpg') center center/cover;
 }
 
 .container .main-tab {
@@ -37,7 +37,6 @@ body {
 
 .container .main-tab .search {
   margin-top: 200px;
-  margin-left: -120px;
 }
 
 .container .main-tab .search input {
@@ -45,7 +44,7 @@ body {
   width: 400px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--light-font-color);
   font-size: 1.7rem;
   color: var(--light-font-color);
 }
@@ -59,7 +58,6 @@ body {
 }
 
 .container .main-tab .weather-info {
-  width: 700px;
   display: flex;
   align-items: center;
 }
@@ -84,4 +82,48 @@ body {
 
 .container .main-tab .weather-info .weather-desc .desc-name {
   font-size: 2rem;
+}
+
+/* Deatils Tab */
+.container .details-tab {
+  background-color: rgba(54, 92, 124, 0.7);
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .details-tab h3 {
+  margin: 20px 58px;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.container .details-tab .cloudy {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+  font-size: 1.2rem;
+}
+
+.container .details-tab .humidity {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+  font-size: 1.2rem;
+}
+
+.container .details-tab .wind {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+  font-size: 1.2rem;
+}
+
+.container .details-tab .rain {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 60px;
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--light-font-color);
 }
