@@ -4,9 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
   <body>
+    <div class="container">
+      <div class="main-tab">
+        <h1>weather.ly</h1>
+        <div class="search">
+          <input type="text" placeholder="Search your city" /><i
+            class="fas fa-search"
+          ></i>
+        </div>
+        <div class="weather-info">
+          <p class="temp">26<span>°</span></p>
+          <p class="city-name">Bengaluru</p>
+          <div class="weather-desc">
+            <i class="fas fa-sun"></i>
+            <p class="desc-name">Sunny</p>
+          </div>
+        </div>
+      </div>
+      <div class="details tab">
+        <h3>Weather Details</h3>
+        <div class="cloudy">
+          <p class="cloudy-title">Cloudy</p>
+          <p class="cloudy-value">12%</p>
+        </div>
+        <div class="humidity">
+          <p class="humidity-title">Humidity</p>
+          <p class="humidity-value">78%</p>
+        </div>
+        <div class="wind">
+          <p class="wind-title">Wind</p>
+          <p class="wind-value">1km/h</p>
+        </div>
+        <div class="rain">
+          <p class="rain-title">Rain</p>
+          <p class="rain-value">0mm</p>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
