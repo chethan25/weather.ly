@@ -1,8 +1,8 @@
 const searchBtn = document.getElementById('search-btn');
+const searchInput = document.querySelector('#search-input');
 
 // populate the UI
 function populateUI() {
-  const searchInput = document.querySelector('#search-input');
   const weatherDataResponse = getWeatherData();
 
   weatherDataResponse.then((weatherData) => {
@@ -33,7 +33,6 @@ function populateUI() {
         weatherDescEle.innerText = 'Rainy';
         break;
       case 'Rain':
-        container.style.color = 'black';
         container.style.backgroundImage = "url('./images/rain.jpg')";
         weatherIconEle.className = 'fas fa-cloud-showers-heavy fa-3x';
         weatherDescEle.innerText = 'Rainy';
