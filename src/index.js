@@ -1,12 +1,17 @@
-const searchInput = document.getElementById('search-input');
+const searchBtn = document.getElementById('search-btn');
 
-// get input from user
-function getSearchValue() {
-  return searchInput.value.toLowerCase().trim();
+async function getWeatherData() {
+  const APIKEY = 'fcc75fb84b746756bc6f68b8a1268cbf';
+  const searchInput = document
+    .getElementById('search-input')
+    .value.toLowerCase()
+    .trim();
+
+  const weatherData = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&appid=${APIKEY}`
+  );
+
+  return weatherData;
 }
 
-searchInput.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter') {
-    getSearchValue();
-  }
-});
+searchBtn.addEventListener('click', getWeatherData);

@@ -1,1 +1,1 @@
-(()=>{const e=document.getElementById("search-input");e.addEventListener("keydown",(t=>{"Enter"===t.key&&(console.log(e.value.toLowerCase().trim()),e.value)}))})();
+document.getElementById("search-btn").addEventListener("click",(function(){const e=document.getElementById("search-input").value.toLowerCase().trim(),t=fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e}&appid=fcc75fb84b746756bc6f68b8a1268cbf`);console.log(t)}));
