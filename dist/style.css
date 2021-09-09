@@ -17,7 +17,7 @@ body {
 .container {
   display: flex;
   height: 100vh;
-  background: url('./images/rain.jpg') center center/cover;
+  background: url('./images/clear.jpg') center center/cover;
 }
 
 .container .main-tab {
@@ -37,6 +37,17 @@ body {
 
 .container .main-tab .search {
   margin-top: 200px;
+}
+
+.container .main-tab .search-btn {
+  background-color: transparent;
+  border: none;
+  color: var(--light-font-color);
+  width: 50px;
+}
+
+.container .main-tab .search-btn .fas:hover {
+  font-size: 1.5rem;
 }
 
 .container .main-tab .search input {
