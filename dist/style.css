@@ -193,6 +193,7 @@ body {
 
 @media screen and (max-width: 650px) {
   body {
+    height: 780px;
     overflow: hidden;
   }
 
