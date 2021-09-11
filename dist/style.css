@@ -138,3 +138,153 @@ body {
   padding-bottom: 50px;
   border-bottom: 1px solid var(--light-font-color);
 }
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container .main-tab .search input {
+    font-size: 1.5rem;
+    width: 300px;
+  }
+
+  .container .main-tab .weather-info .temp {
+    font-size: 5rem;
+  }
+
+  .container .main-tab .weather-info .city-name {
+    font-size: 2rem;
+  }
+
+  .container .main-tab .weather-info .weather-desc {
+    height: 70px;
+  }
+
+  .container .main-tab .weather-info .weather-desc .desc-name {
+    font-size: 1.5rem;
+  }
+
+  .container .details-tab h3 {
+    font-size: 1.2rem;
+    margin: 20px 28px;
+  }
+  .container .details-tab .cloudy {
+    font-size: 1rem;
+    margin: 20px 30px;
+  }
+
+  .container .details-tab .humidity {
+    font-size: 1rem;
+    margin: 20px 30px;
+  }
+
+  .container .details-tab .wind {
+    font-size: 1rem;
+    margin: 20px 30px;
+  }
+
+  .container .details-tab .pressure {
+    font-size: 1rem;
+    margin: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    overflow: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .main-tab {
+    height: 60vh;
+    width: 100%;
+    color: var(--dark-font-color);
+  }
+
+  .container .main-tab h1 {
+    font-size: 30px;
+    position: absolute;
+    left: 120px;
+  }
+
+  .container .details-tab {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .container .main-tab .search {
+    margin-top: 200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .main-tab .search-btn {
+    color: var(--dark-font-color);
+  }
+
+  .container .main-tab .search input {
+    width: 70%;
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+
+  .container .main-tab .search input {
+    border-bottom: 1px solid var(--dark-font-color);
+    font-size: 1.7rem;
+    color: var(--dark-font-color);
+  }
+
+  .container .main-tab .search input::placeholder {
+    color: var(--dark-font-color);
+  }
+
+  .container .main-tab .weather-info {
+    height: 200px;
+  }
+
+  .container .main-tab .weather-info .temp {
+    font-size: 3rem;
+  }
+
+  .container .main-tab .weather-info .city-name {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+
+  .container .main-tab .weather-info .weather-desc {
+    margin-left: 30px;
+    height: 72px;
+  }
+
+  .container .main-tab .weather-info .weather-desc .desc-name {
+    font-size: 1.2rem;
+  }
+
+  .container .details-tab h3 {
+    font-size: 1rem;
+    margin-left: 35%;
+  }
+  .container .details-tab .cloudy {
+    font-size: 0.9rem;
+  }
+
+  .container .details-tab .humidity {
+    font-size: 0.9rem;
+  }
+
+  .container .details-tab .wind {
+    font-size: 0.9rem;
+  }
+
+  .container .details-tab .pressure {
+    font-size: 0.9rem;
+  }
+}
