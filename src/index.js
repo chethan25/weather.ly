@@ -19,7 +19,7 @@ function populateUI() {
     tempEle.innerHTML = `${tempCelsius}<span>°</span>`;
     cityNameEle.innerText = cityName;
 
-    console.log(weatherIconEle);
+    // console.log(weatherIconEle);
 
     switch (weatherDesc) {
       case 'Thunderstorm':
@@ -61,6 +61,19 @@ function populateUI() {
       default:
         break;
     }
+
+    // Details Tab
+    const cloudyValue = document.querySelector('.cloudy-value');
+    const humidityValue = document.querySelector('.humidity-value');
+    const windValue = document.querySelector('.wind-value');
+    const pressureValue = document.querySelector('.pressure-value');
+
+    // console.log(weatherData.clouds.all);
+
+    cloudyValue.innerText = `${weatherData.clouds.all}%`;
+    humidityValue.innerText = `${weatherData.main.humidity}%`;
+    windValue.innerText = `${weatherData.wind.speed} km/h`;
+    pressureValue.innerText = `${weatherData.main.pressure} mm`;
   });
   searchInput.value = '';
 }

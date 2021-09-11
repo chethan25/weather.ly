@@ -130,7 +130,7 @@ body {
   font-size: 1.2rem;
 }
 
-.container .details-tab .rain {
+.container .details-tab .pressure {
   display: flex;
   justify-content: space-between;
   margin: 20px 60px;
