@@ -203,7 +203,7 @@ body {
   }
 
   .container .main-tab {
-    min-height: 485px;
+    min-height: 500px;
     width: 100%;
     color: var(--dark-font-color);
   }
