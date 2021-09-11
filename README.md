@@ -1,6 +1,6 @@
 # Weather App
 
-> ## From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/weather-app)
+> ## From The Odin Project's [curriculum](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/weather-app)
 
 > - [Live Demo](https://chethan25.github.io/weather.ly/)
 
