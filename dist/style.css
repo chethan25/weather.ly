@@ -17,7 +17,7 @@ body {
 .container {
   display: flex;
   height: 100vh;
-  background: url('./images/clear.jpg') center center/cover;
+  background: url('./images/snow.jpg') center center/cover;
 }
 
 .container .main-tab {
@@ -199,6 +199,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
+    min-height: 900px;
   }
 
   .container .main-tab {
