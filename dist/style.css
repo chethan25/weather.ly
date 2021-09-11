@@ -193,7 +193,6 @@ body {
 
 @media screen and (max-width: 650px) {
   body {
-    height: 780px;
     overflow: hidden;
   }
 
@@ -203,7 +202,7 @@ body {
   }
 
   .container .main-tab {
-    height: 60vh;
+    height: 500px;
     width: 100%;
     color: var(--dark-font-color);
   }
@@ -215,7 +214,7 @@ body {
   }
 
   .container .details-tab {
-    height: 40vh;
+    height: 300px;
     width: 100%;
   }
 
