@@ -199,12 +199,11 @@ body {
   .container {
     display: flex;
     flex-direction: column;
-    min-height: 700px;
     background-attachment: fixed;
   }
 
   .container .main-tab {
-    min-height: 465px;
+    min-height: 485px;
     width: 100%;
     color: var(--dark-font-color);
   }
